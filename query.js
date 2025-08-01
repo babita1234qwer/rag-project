@@ -8,7 +8,7 @@ import { Pinecone } from '@pinecone-database/pinecone';
 
 const app = express();
 app.use(cors({
-  origin: "http://localhost:3001",  // React frontend
+  origin:["https://your-frontend.netlify.app", "http://localhost:3001"], // React frontend
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"]
 }));
